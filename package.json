@@ -1,0 +1,29 @@
+{
+  "name": "spa-blog-demo",
+  "version": "1.1.1",
+  "scripts": {
+    "build": "tsc",
+    "serve": "tsc && concurrently \"tsc -w\" lite-server"
+  },
+  "dependencies": {
+    "@angular/common": "2.0.1",
+    "@angular/compiler": "2.0.1",
+    "@angular/core": "2.0.1",
+    "@angular/forms": "2.0.1",
+    "@angular/http": "2.0.1",
+    "@angular/platform-browser": "2.0.1",
+    "@angular/platform-browser-dynamic": "2.0.1",
+    "@angular/router": "3.0.0",
+    "bootstrap": "3.3.7",
+    "core-js": "2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "systemjs": "0.19.39",
+    "zone.js": "0.6.25"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.34",
+    "concurrently": "3.0.0",
+    "lite-server": "2.2.2",
+    "typescript": "2.0.3"
+  }
+}
