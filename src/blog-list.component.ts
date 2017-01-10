@@ -9,7 +9,7 @@ import {PostListComponent} from './post-list.component';
           <!-- Default panel contents -->
           <div class="panel-heading">{{blog.title}}</div>
           <div class="panel-body">
-            <p>{{blog.body}}</p>
+            <p [innerHTML]="blog.body"></p>
           </div>
           <div class="panel-footer">
             <a [routerLink]="['/blogs', blog.id]" class="btn btn-info" role="button">

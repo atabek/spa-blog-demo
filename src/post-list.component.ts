@@ -7,7 +7,7 @@ import {Component, EventEmitter, Input, Output} from '@angular/core';
       <!-- Default panel contents -->
       <div class="panel-heading">{{post.title}}</div>
       <div class="panel-body">
-        <p>{{post.body}}</p>
+        <p [innerHTML]="post.body"></p>
       </div>
       <div class="panel-footer">
         <button (click)="onEdit(post)" class="btn btn-warning">

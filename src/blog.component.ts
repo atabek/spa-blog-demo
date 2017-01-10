@@ -18,8 +18,8 @@ export class BlogComponent {
     editableBlog = {};
 
     constructor(private blogService: BlogService) {
-        this.blogService.errorHandler = error =>
-            alert('Oops! The server request failed.');
+        // this.blogService.errorHandler = error =>
+        //     console.log('Oops! The server request failed.');
         this.reload();
     }
 
@@ -50,6 +50,6 @@ export class BlogComponent {
     private reload() {
         this.blogService.getBlogs()
             .then(blogs => this.blogs = blogs)
-            .catch(error => alert('Oops! The server request failed.'));
+            .catch(error => console.log('Oops! The server request failed.'));
     }
 }
